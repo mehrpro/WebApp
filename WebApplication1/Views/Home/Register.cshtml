@@ -1,0 +1,27 @@
+﻿@model WebApplication1.Models.UserInfo
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+</head>
+<body>
+    <div>
+        <h1>Plase Register</h1>
+        @using (Html.BeginForm("Final", "Home"))
+        {
+            @Html.TextBoxFor(x=> x.FName)
+            @Html.TextBoxFor(x=>x.LName)
+            @Html.TextBoxFor(x=> x.Age)
+            @Html.TextBoxFor(x=> x.PhoneNumber)
+            <input type="submit" />
+
+        }
+    </div>
+</body>
+</html>
